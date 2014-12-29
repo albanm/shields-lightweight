@@ -1,0 +1,18 @@
+{
+  "name": "shields-lib",
+  "version": "0.0.0",
+  "description": "The badge making code extracted from the original badges/shields project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "badge",
+    "shield"
+  ],
+  "author": "Alban Mouton <alban.mouton@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dot": "^1.0.3"
+  }
+}
