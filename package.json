@@ -1,8 +1,9 @@
 {
   "name": "shields-lib",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The badge making code extracted from the original badges/shields project",
   "main": "index.js",
+  "repository": "https://github.com/albanm/shields-lightweight",
   "scripts": {
     "test": "mocha"
   },
