@@ -1,5 +1,5 @@
 {
-  "name": "shields-lib",
+  "name": "shields-lightweight",
   "version": "0.1.0",
   "description": "The badge making code extracted from the original badges/shields project",
   "main": "index.js",
