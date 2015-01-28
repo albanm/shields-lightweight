@@ -5,13 +5,6 @@ env:
   global:
     secure: "dzTDUtJ5rIHTDQ+ZJV2bNu4cwxoQR7xaaoen5BB7Etss/mUs4G2K4wzSmmCtSUND1JYKVVnRAtbY+6rfzh/S0TbhiUkHPk0ctEeoLIra98fsd/thvhy9BST+s4pb1Kh+7VMFwuv4IRwpt1tMKDaOr0cOxrDPUUq9yrlQyiet95A="
 
-before_install:
-  - npm install
-
-script:
-  - npm test
-  - gulp
-
 # deploy build directory to gh-pages branch
 after_script:
   - gulp deploy-build

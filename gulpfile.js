@@ -61,13 +61,13 @@ gulp.task('git-config', function(callback){
 	exec('git config --global user.email "alban.mouton@gmail.com" && git config --global user.name "Alban Mouton through Travis-CI"', callback);
 });
 
-gulp.task('deploy-build', ['cover-badge', 'git-config'], function() {
+gulp.task('deploy-build', ['cover-badge', 'test-badge', 'lint', 'git-config'], function() {
 	var deployOptions = {
 		cacheDir: './build/repos/shields-lightweight'
 	};
 	if (process.env.githubToken) {
 		console.log('"githubToken" environment variable found, use it to authenticate to github');
-		deployOptions.remoteUrl = 'https://' + process.env.githubToken + '@github.com/albanm/lcov2badge';
+		deployOptions.remoteUrl = 'https://' + process.env.githubToken + '@github.com/albanm/shields-lightweight';
 	}
 	return gulp.src('./build/**/*')
 		.pipe(deploy(deployOptions));
