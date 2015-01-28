@@ -17,6 +17,13 @@
     "dot": "^1.0.3"
   },
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "gulp": "^3.8.10",
+    "gulp-gh-pages": "^0.4.0",
+    "istanbul": "^0.3.5",
+    "jshint-html-reporter": "^0.2.3",
+    "jshint-reporter-badge": "^0.1.0",
+    "lcov2badge": "^0.1.0",
+    "mocha": "^2.1.0",
+    "mocha-reporter-badge": "^0.1.0"
   }
 }
